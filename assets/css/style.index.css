@@ -19,10 +19,11 @@ main {
     align-items: center;
     width: 100%;
     height: 100vh;
+    gap: 3.5rem;
 }
 
 img {
-    width: 30rem;
+    width: 31rem;
 }
 
 #secForm {
@@ -32,11 +33,14 @@ img {
     color: #F8FAFC;
     background-color: #262626;
     border-radius: 8px;
+    gap: 2rem;
 }
 
-#caculator {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
+#calculator {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
 }
 
 #title {
@@ -56,7 +60,7 @@ img {
     background-color: #3F3F46;
     padding: 0.3rem;
     border-radius: 4px;
-    margin-top: 2px;;
+    margin-top: 2px;
 }
 
 .inputField input {
@@ -78,4 +82,20 @@ img {
     color: #CBD5E1;
     font-size: 1.3rem;
     padding: 0.6rem 1rem;
+}
+
+#btnCalculate {
+    background-color: #FF0008;
+    border: none;
+    color: #F8FAFC;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 0.5rem 0;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.inputField input:focus {
+    outline: none;
 }
